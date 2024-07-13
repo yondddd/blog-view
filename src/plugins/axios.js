@@ -3,7 +3,7 @@ import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 
 const request = axios.create({
-  baseURL: "http://47.119.161.4:8090/view/",
+  baseURL: "https://yond.top/api/view/",
   timeout: 10000,
 });
 
