@@ -1,18 +1,16 @@
-import axios from '@/plugins/axios'
+import axios from "@/plugins/axios";
 
-export function getData() {
-	return axios({
-		url: 'friends',
-		method: 'GET'
-	})
+export function pageFriend() {
+  return axios({
+    url: "friend/list",
+    method: "GET",
+  });
 }
 
-export function addViewsByNickname(nickname) {
-	return axios({
-		url: 'friend',
-		method: 'POST',
-		params: {
-			nickname
-		}
-	})
+export function friendClick(FriendClickReq) {
+  return axios({
+    url: "friend",
+    method: "POST",
+    data: FriendClickReq,
+  });
 }
